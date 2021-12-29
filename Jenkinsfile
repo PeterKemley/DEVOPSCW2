@@ -9,6 +9,6 @@ node {
         customImage.push()
 
 
-        sh("""docker run -p 49160:8080 -d peterkemley/cw2-webapp""")
+        sh("""docker run -p :8080 -d peterkemley/cw2-webapp""")
     }
 }
