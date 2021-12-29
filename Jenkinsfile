@@ -7,5 +7,8 @@ node {
 
         /* Push the container to the custom Registry */
         customImage.push()
+
+
+        sh("""docker run -p 49155:8080 -d peterkemley/cw2-webapp""")
     }
 }
